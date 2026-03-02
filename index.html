@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevMood – Code Based on Your Mood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>DevMood</h1>
+    <p>Code Based on Your Mood</p>
+  </header>
+
+  <div class="mood-grid" id="moodGrid">
+    <button class="mood-btn" data-mood="happy">
+      <span class="emoji">😄</span> Happy
+    </button>
+    <button class="mood-btn" data-mood="focused">
+      <span class="emoji">🎯</span> Focused
+    </button>
+    <button class="mood-btn" data-mood="tired">
+      <span class="emoji">😴</span> Tired
+    </button>
+    <button class="mood-btn" data-mood="sad">
+      <span class="emoji">😢</span> Sad
+    </button>
+  </div>
+
+  <div class="content-area" id="contentArea">
+    <div class="card">
+      <div class="card-label">✨ Motivational Quote</div>
+      <div class="card-content quote-text" id="quoteText"></div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <div class="card-label">🎵 Coding Music</div>
+        <div class="music-links" id="musicLinks"></div>
+      </div>
+      <div class="card">
+        <div class="card-label">💡 Beginner Challenge</div>
+        <div class="challenge-title" id="challengeTitle"></div>
+        <div class="challenge-desc" id="challengeDesc"></div>
+        <div class="code-block" id="challengeCode"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="reset-btn" id="resetBtn">↩ Reset Mood</button>
+  <script src="script.js"></script>
+</body>
+</html>
